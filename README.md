@@ -1,2 +1,2 @@
-# template
+# Template
 Template repo for training!
