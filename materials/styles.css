@@ -1,0 +1,146 @@
+*{
+    color: #003658;
+    background-color: #FFFFFF;
+    margin: 0px;
+    font-family: verdana, arial, "sans serif";
+    font-size:13px;
+}
+
+
+.topic-body
+{
+    border:solid 1px  #C5E4FF;
+    margin: 1.1em;
+    padding: 1.1em;
+
+}
+.topic-buttons 
+{
+	text-align:center;
+	padding:0.5em;
+}
+.topic-buttons a
+{
+    color: white;
+    background-color:transparent;
+    border: 1px solid #003658;
+    background-image: url('img/bg_temabutton.gif');
+    background-position: center;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+	display: inline-block;
+	display: -moz-inline-stack; /*костыль для firefox 2. если будет глюк (к сожалению, не было возможности проверить), то следует обернуть каждую ссылку в дополнительный div */
+	zoom: 1;
+	*display: inline; /*display: inline-block for IE 7*/
+    height: auto;
+    width: auto;
+	margin: 5px 0;
+    vertical-align:middle;
+	
+}
+.topic-buttons img {
+	vertical-align: middle;	
+}
+.topic-buttons a:hover 
+{
+    text-decoration: none;
+    background-image: url('img/bg_temabutton_on.gif');
+    color:#FFF;
+}
+
+.memo
+{
+    padding:2em;
+    font-size:13px;
+}
+.memo h1,
+.topic h1
+{
+    width:100%;
+    text-align:center;
+    font-size:1.1em;
+    padding-bottom:0.9em;
+    padding-top:1em;
+}
+.memo h2,
+.memo h3
+{
+    width:100%;
+    text-align:center;
+    font-size:1em;
+    padding-bottom:0.4em;
+    padding-top:1.5em;
+}
+.memo h3
+{
+    font-style:italic;
+}
+.memo p,
+.topic-body p
+{
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+    font-size:1em;
+    text-align:justify;
+}
+a{
+color:#0000FF;
+text-decoration:none;
+}
+a:hover{
+text-decoration:underline;
+}
+.memo ul,
+.memo ol,
+.topic ul,
+.topic ol
+{
+ padding-bottom:1em;
+}
+
+.memo .table-01
+{
+ 	border-collapse:collapse;
+ 	font-weight:normal;
+ 	margin-top:1em;
+ 	margin-bottom:1em;
+}
+.memo .table-01 caption
+{
+	text-align:right;
+	padding-bottom:0.3em;
+}
+ .memo .table-01 th
+ {
+ 	 background-color:#C6D9F1;
+ }
+ .memo .table-01 th,
+ .memo .table-01 td
+ {
+  	color:#003658;
+ 	border:solid 1px #003658;
+ 	padding:0.3em;
+
+ }
+
+p{
+    margin:  0.2em 1.1em;
+    padding:  0.5em 1.1em;
+}
+
+ul{
+    margin:  0.5em 2.1em;
+    padding:  0.5em 2.1em;
+}
+
+.topic-body p{
+    margin:  0em;
+    padding:  0em;
+}
+.topic-body p{
+    margin-bottom:  0.5em;
+    padding-bottom:  0.5em;
+}
