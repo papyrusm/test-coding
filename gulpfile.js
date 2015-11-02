@@ -14,26 +14,26 @@ gulp.task('connect', function() {
 
 //Работа с HTML
 gulp.task('html', function () {
-  gulp.src('./app/*.html')
+  gulp.src('source/*.html')
     .pipe(connect.reload());
 });
 
 //Работа с CSS
 gulp.task('css', function () {
-  gulp.src('./app/css/*.css')
+  gulp.src('source/style/*.css')
     .pipe(connect.reload());
 });
 //Работа с js
 gulp.task('js', function () {
-  gulp.src('./app/js/*.js')
+  gulp.src('source/js/*.js')
     .pipe(connect.reload());
 });
 
 //Слежка
 gulp.task('watch', function () {
-  gulp.watch(['./app/*.html'], ['html']);
-  gulp.watch(['./app/css/*.css'], ['css']);
-  gulp.watch(['./app/js/*.js'], ['js']);
+  gulp.watch(['source/*.html'], ['html']);
+  gulp.watch(['source/style/*.css'], ['css']);
+  gulp.watch(['source/js/*.js'], ['js']);
 });
 
 //дефолт задача
