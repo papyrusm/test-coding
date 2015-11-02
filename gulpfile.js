@@ -1,6 +1,18 @@
 var gulp = require('gulp'),
   connect = require('gulp-connect'),
-  opn = require('opn');
+  opn = require('opn'),
+  exec = require('child_process').exec;
+
+//запускаем командную строку
+gulp.task('task', function (cb) {
+  var in = 'source/SG/*.doc'
+  exec('mammoth source/SG/*.doc source/opt/ --output-format html', function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+});
+
 
 //запускаем локальный	 сервер
 gulp.task('connect', function() {

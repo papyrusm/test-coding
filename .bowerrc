@@ -1,5 +1,0 @@
-{
-	"directory"  : "app/bower",
-	"proxy":"http://localhost:3128",
-	"https-proxy":"http://localhost:3128"
-}
