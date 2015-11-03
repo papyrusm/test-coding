@@ -5,7 +5,7 @@ var gulp = require('gulp'),
 
 //запускаем командную строку
 gulp.task('convert', function (cb) {
-  exec('winword /mconvert %CD%/source/*.docx');
+  exec('winword /mconvert /q %CD%/source/*.docx');
 });
 
 
