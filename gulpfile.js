@@ -4,13 +4,8 @@ var gulp = require('gulp'),
   exec = require('child_process').exec;
 
 //запускаем командную строку
-gulp.task('task', function (cb) {
-  var in = 'source/SG/*.doc'
-  exec('mammoth source/SG/*.doc source/opt/ --output-format html', function (err, stdout, stderr) {
-    console.log(stdout);
-    console.log(stderr);
-    cb(err);
-  });
+gulp.task('convert', function (cb) {
+  exec('winword /mconvert %CD%/source/*.docx');
 });
 
 
@@ -49,4 +44,4 @@ gulp.task('watch', function () {
 });
 
 //дефолт задача
-gulp.task('default', ['connect', 'watch'])
+gulp.task('default', ['convert', 'connect', 'watch'])
